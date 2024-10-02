@@ -1,0 +1,31 @@
+[1mdiff --git a/about.html b/about.html[m
+[1mindex e69de29..54de225 100644[m
+[1m--- a/about.html[m
+[1m+++ b/about.html[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>About Us</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <h1>About Us</h1>[m
+[32m+[m[32m    <p>Welcome to our website! We are a team dedicated to providing high-quality services and products.</p>[m
+[32m+[m[32m    <p>Our mission is to make a positive impact in the industry and serve our customers with excellence.</p>[m
+[32m+[m[32m    <p>Feel free to explore our website to learn more about what we do.</p>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex fd80d21..d0a3334 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -9,6 +9,7 @@[m
+     <img src="https://th.bing.com/th?id=OIP.1gncZlYP1H_ZiQMI-YK96gHaFk&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Air university" width="400" height="300">[m
+     <h1>Welcome to Air University Islamabad</h1>[m
+     <p>Air University Islamabad</p>[m
+[32m+[m[32m    <h1>Added new Heading</h1>[m
+    [m
+ </body>[m
+ </html>[m
