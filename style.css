@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('543188.jpg'); /* Path to your Batman image */
+    background-size: cover; /* Cover the whole page */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Background tiles */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    pointer-events: none;
+}
+
+.tile-container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.tile-container div {
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile-container div:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+/* Landing page styles */
+.landing-page {
+    position: relative;
+    z-index: 2;
+    text-align: center; /* Centered text */
+}
+
+/* Welcome box */
+.welcome-box {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 20px; /* Reduced padding for adjustment */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Golden shadow */
+    margin-top: 100px; /* Space above the welcome box */
+}
+
+/* 3D Text for Welcome */
+.welcome-box h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), /* Dark shadow */
+                 -2px -2px 5px rgba(255, 215, 0, 0.8); /* Light highlight */
+}
+
+/* Button container */
+.button-container {
+    display: flex; /* Use flexbox for positioning */
+    justify-content: space-between; /* Space between buttons */
+    width: 100%; /* Full width for alignment */
+    max-width: 600px; /* Maximum width for the button container */
+    margin-top: 50px; /* Space above buttons */
+}
+
+/* Main buttons */
+.main-button {
+    width: 200px; /* Fixed width for buttons */
+    margin: 0; /* Remove margin to use flex spacing */
+    padding: 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #FFD700; /* Batman yellow */
+    color: black; /* Text color */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease, transform 0.2s; /* Smooth transition */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow effect for buttons */
+}
+
+.main-button:hover {
+    background-color: #FFC107; /* Lighter yellow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* 3D Box Styles for Login and Signup */
+.container, .login-box, .signup-box {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(145deg, #1a1a1a, #333);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 60px #0f0f0f, 
+                -20px -20px 60px #5a5a5a; /* 3D effect */
+    max-width: 600px; /* Increased max-width for wider boxes */
+    width: 90%; /* Set width to 90% for responsiveness */
+    margin: auto; /* Center box */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.container:hover, .login-box:hover, .signup-box:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Header styles */
+header h1 {
+    text-align: center; /* Center header text */
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #222; /* Dark background */
+    color: #fff; /* Text color */
+    font-size: 1rem; /* Font size */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.1); /* Inner shadow for depth */
+}
+
+/* Button styles */
+button {
+    background-color: #000; /* Black background for buttons */
+    color: #FFD700; /* Batman yellow for text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Adjust border radius if needed */
+    cursor: pointer;
+    font-size: 1rem; /* Adjust font size if needed */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 215, 0, 0.8); /* Lighter yellow on hover */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Optional shadow effect */
+}
+
+/* Response messages */
+.success-message {
+    color: #4caf50; /* Green for success */
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #f44336; /* Red for errors */
+    margin-top: 10px;
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 20px;
+    background-color: #333; /* Dark gray */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+/* Hidden class for toggling visibility */
+.hidden {
+    display: none;
+}
